@@ -2,7 +2,7 @@
 
 
 
-function spannerfy {
+function spannerfy() {
     var inputText = String.trim(document.forms['spanner']['spannerinput'].value);
     var spanText = [];
     var charArray = inputText.split("");

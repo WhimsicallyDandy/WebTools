@@ -1,0 +1,41 @@
+/*
+
+Colour Declaration:
+
+Grey		#BEC5AD
+Pale Green	#A4B494
+Midgreen	#519872
+Darkgreen	#3B5249
+Purple		#34252F
+
+*/
+
+body {
+	color: #34252f;
+	background-color: #BEC5AD;
+	font-family: "Open Sans", monospace;
+}
+
+form {
+	background-color: #A4B494;
+	padding: 30px;
+}
+
+#spannerinput {
+	position: relative;
+	display: block;
+	width: 70%;
+	max-width: 1000px;
+	height: 300px;
+	max-height: 1000px;
+	margin: auto;
+}
+
+#spannerheading {
+	margin: 30px;
+	display: inline-block;
+}
+
+#desc {
+	margin-left: 60px;
+}

@@ -3,17 +3,26 @@
 	<head>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<form name="spanner" onsubmit = "return spannerfy()">
-			<h2 id="spannerheading"> Text to spanner </h2> 
-			<p id="desc"> need to put a span around every charicter of a section of text (for things like css animation) this will do that. </p>
-			<input type="textarea" name="spannerinput" id="spannerinput">
-			<input type="button" value="submit" onclick="spannerfy();">
-		</form>
-		<p id="spanneroutput">
-			<code id = "spannerOutputCode"></code>
-		</p>
+		<div class="input">
+			<form name="spanner" onsubmit="return spannerfy()" id="spanner">
+				<h2 id="spannerheading"> Spanifyer </h2> 
+				<p id="desc"> need to put a span around every charicter of a section of text, for things like css animation? this will do that. </p>
+				<!-- <input type="text" name="spannerinput" id="spannerinput"> -->
+				<textarea name="spannerinput" id="spannerinput" form="spanner"> </textarea>
+				<div id="buttonwrapper">
+					<input type="button" value="Spanerfy!" onclick="spannerfy();" id="inputbutton">
+				</div>
+			</form>
+		</div> 
+		
+		<div class="output">
+			<p id="spanneroutput">
+				<code id = "spannerOutputCode"></code>
+			</p>
+		</div>
 		<script src="spanner.js"></script>
 	<body>
 </html>

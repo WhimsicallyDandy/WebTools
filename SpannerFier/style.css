@@ -4,7 +4,7 @@ Colour Declaration:
 
 Grey		#BEC5AD
 Pale Green	#A4B494
-Midgreen	#519872
+Midgreen	#73b371
 Darkgreen	#3B5249
 Purple		#34252F
 
@@ -16,9 +16,22 @@ body {
 	font-family: "Open Sans", monospace;
 }
 
-form {
+.input {
 	background-color: #A4B494;
 	padding: 30px;
+}
+
+
+#inputbutton {
+	margin: 20px auto;
+	position: relative;
+	border: 0;
+	padding: 5px;
+	display: block;
+	background-color: #73b371;
+	font-size: 12pt;
+	
+	
 }
 
 #spannerinput {
@@ -26,16 +39,35 @@ form {
 	display: block;
 	width: 70%;
 	max-width: 1000px;
-	height: 300px;
+	min-width: 300px;
+	height: 100px;
 	max-height: 1000px;
 	margin: auto;
 }
 
 #spannerheading {
-	margin: 30px;
+	margin-left: 5%;
 	display: inline-block;
+	margin-bottom: 0;
 }
 
 #desc {
-	margin-left: 60px;
+	margin-left: 10%;
 }
+
+.input { 
+	width: 70%;
+	min-width: 300px;
+	margin: auto;
+}
+
+.output {
+	background-color: #3B5249;
+	width: 70%;
+	min-width: 300px;
+	margin: auto;
+	color: #BEC5AD;
+	margin: auto;
+	padding: 0 30px;
+}
+	

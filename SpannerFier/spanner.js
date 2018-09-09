@@ -3,14 +3,14 @@
 
 
 function spannerfy() {
-    var inputText = String.trim(document.forms['spanner']['spannerinput'].value);
+    var inputText = document.forms['spanner']['spannerinput'].value.trim();
     var spanText = [];
     var charArray = inputText.split("");
 
     for (i=0; i<charArray.length; i++) {
-        spanText.push('<span>');
+        spanText.push('&ltspan&gt');
         spanText.push(charArray[i]);
-        spanText.push('</span>');
+        spanText.push('&lt/span&gt');
     }
 
     var returnText = "";
@@ -19,6 +19,8 @@ function spannerfy() {
         returnText += spanText[i];
     }
 
-    alert(returnText);
+    returnText +="";
+    document.getElementById('spannerOutputCode').innerHTML = returnText;
+    console.log(returnText);
 }
 

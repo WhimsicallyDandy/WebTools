@@ -5,13 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<form name="spanner">
+		<form name="spanner" onsubmit = "return spannerfy()">
 			<h2 id="spannerheading"> Text to spanner </h2> 
 			<p id="desc"> need to put a span around every charicter of a section of text (for things like css animation) this will do that. </p>
 			<input type="textarea" name="spannerinput" id="spannerinput">
-			<input type="submit" value="submit" onsubmit="return spannerfy">
+			<input type="button" value="submit" onclick="spannerfy();">
 		</form>
 		<p id="spanneroutput">
+			<code id = "spannerOutputCode"></code>
 		</p>
 		<script src="spanner.js"></script>
 	<body>

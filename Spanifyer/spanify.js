@@ -2,8 +2,8 @@
 
 
 
-function spannerfy() {
-    var inputText = document.forms['spanner']['spannerinput'].value.trim();
+function spanify() {
+    var inputText = document.forms['spanifyer']['spanifyinput'].value.trim();
     var spanText = [];
     var charArray = inputText.split("");
 
@@ -20,7 +20,7 @@ function spannerfy() {
     }
 
     returnText +="";
-    document.getElementById('spannerOutputCode').innerHTML = returnText;
+    document.getElementById('spanifyOutputCode').innerHTML = returnText;
     console.log(returnText);
 }
 

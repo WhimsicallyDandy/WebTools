@@ -34,7 +34,7 @@ input[type=button] {
 	
 }
 
-#spannerinput {
+#spanifyinput {
 	position: relative;
 	display: block;
 	width: 70%;
@@ -45,7 +45,7 @@ input[type=button] {
 	margin: auto;
 }
 
-#spannerheading {
+#spanifyheading {
 	margin-left: 5%;
 	display: inline-block;
 	margin-bottom: 0;

@@ -7,20 +7,19 @@
 	</head>
 	<body>
 		<div class="input">
-			<form name="spanner" onsubmit="return spannerfy()" id="spanner">
-				<h2 id="spannerheading"> Spanifyer </h2> 
+			<form name="spanifyer" id="spanifyer">
+				<h2 id="spanifyheading"> Spanifyer </h2> 
 				<p id="desc"> need to put a span around every charicter of a section of text, for things like css animation? this will do that. </p>
-				<!-- <input type="text" name="spannerinput" id="spannerinput"> -->
-				<textarea name="spannerinput" id="spannerinput" form="spanner"> </textarea>
+				<textarea name="spanifyinput" id="spanifyinput" form="spanifyer"> </textarea>
 				<div id="buttonwrapper">
-					<input type="button" value="Spanerfy!" onclick="spannerfy();" id="inputbutton">
+					<input type="button" value="Spanify!" onclick="spanify();" id="inputbutton">
 				</div>
 			</form>
 		</div> 
 		
 		<div class="output">
-			<p id="spanneroutput">
-				<code id = "spannerOutputCode"></code>
+			<p id="spanifyoutput">
+				<code id="spanifyOutputCode"></code>
 			</p>
 		</div>
 		<footer>
@@ -30,6 +29,6 @@
 			</a>
 			</div>
 		</footer>
-		<script src="spanner.js"></script>
+		<script src="spanify.js"></script>
 	<body>
 </html>

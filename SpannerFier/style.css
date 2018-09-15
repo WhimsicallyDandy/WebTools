@@ -2,35 +2,35 @@
 
 Colour Declaration:
 
-Grey		#BEC5AD
-Pale Green	#A4B494
-Midgreen	#73b371
-Darkgreen	#3B5249
-Purple		#34252F
+Pale Green		#C5D897
+Fresh Green		#90B56C
+Midgreen		#519872
+Accent Purple	#442C3C
+Dark Purple		#33192A
 
 */
 
 body {
-	color: #34252f;
-	background-color: #BEC5AD;
+	color: #33192a;
+	background-color: #C5D897;
 	font-family: "Open Sans", monospace;
 }
 
 .input {
-	background-color: #A4B494;
+	background-color: #90B56C;
 	padding: 30px;
 }
 
 
-#inputbutton {
+input[type=button] {
 	margin: 20px auto;
 	position: relative;
-	border: 1px solid #BEC5AD;
+	border: 1px solid #519872;
 	padding: 5px;
 	display: block;
-	background-color: #73b371;
+	background-color: #442C3C;
 	font-size: 12pt;
-	
+	color: #C5D897;
 	
 }
 
@@ -62,11 +62,11 @@ body {
 }
 
 .output {
-	background-color: #3B5249;
+	background-color: #442C3C;
 	width: 70%;
 	min-width: 300px;
 	margin: auto;
-	color: #BEC5AD;
+	color: #C5D897;
 	margin: auto;
 	padding: 0 30px;
 }

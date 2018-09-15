@@ -31,7 +31,12 @@ input[type=button] {
 	background-color: #442C3C;
 	font-size: 12pt;
 	color: #C5D897;
-	
+}
+
+input[type=checkbox] {
+	padding: 30px;
+	margin-left: 10%;
+	margin-top: 15px;
 }
 
 #spanifyinput {

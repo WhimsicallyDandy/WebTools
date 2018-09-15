@@ -7,12 +7,23 @@ function spanify() {
     var spanText = [];
     var charArray = inputText.split("");
 	var spanclass = inputText.replace(/\s/g,'');
+	var nospaceArray = spanclass.split("")
+	var nospaces = document.getElementById("nospace");
 
-    for (i=0; i<charArray.length; i++) {
-	spanText.push('&ltspan' + ' id="' + i + '" class="' + spanclass + '"&gt');
-        spanText.push(charArray[i]);
-        spanText.push('&lt/span&gt' + '<br>');
-    }
+	if (nospaces.checked) {
+			for (i=0; i<nospaceArray.length; i++) {
+		spanText.push('&ltspan' + ' id="' + i + '" class="' + spanclass + '"&gt');
+			spanText.push(nospaceArray[i]);
+			spanText.push('&lt/span&gt' + '<br>');
+		}
+	}
+	else {
+	for (i=0; i<charArray.length; i++) {
+		spanText.push('&ltspan' + ' id="' + i + '" class="' + spanclass + '"&gt');
+			spanText.push(charArray[i]);
+			spanText.push('&lt/span&gt' + '<br>');
+			}
+		}
 
     var returnText = "";
 

@@ -6,11 +6,12 @@ function spanify() {
     var inputText = document.forms['spanifyer']['spanifyinput'].value.trim();
     var spanText = [];
     var charArray = inputText.split("");
+	var spanclass = inputText.replace(/\s/g,'');
 
     for (i=0; i<charArray.length; i++) {
-        spanText.push('&ltspan&gt');
+	spanText.push('&ltspan' + ' id="' + i + '" class="' + spanclass + '"&gt');
         spanText.push(charArray[i]);
-        spanText.push('&lt/span&gt');
+        spanText.push('&lt/span&gt' + '<br>');
     }
 
     var returnText = "";
